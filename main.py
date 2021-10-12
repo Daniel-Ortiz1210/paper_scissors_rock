@@ -4,7 +4,7 @@ movements = ['piedra', 'papel', 'tijera']
 print('\nPiedra, papel o tijera vs una IA\n')
 def game(movements):
     while True:
-        user = input('You: ').lower()
+        user = input('You (pieda, papel, tijera): ').lower()
         ia = movements[random.randint(0, 2)]
         if user == movements[1] and ia == movements[0]:
             print('IA:', ia)
